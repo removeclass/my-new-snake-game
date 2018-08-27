@@ -1,8 +1,4 @@
-body{
-	text-align: center;
-}
-
-#canvas{
+#canvas {
 	position: absolute;
 	margin: auto;
 	top: 0;
