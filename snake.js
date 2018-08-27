@@ -86,7 +86,7 @@ $(document).ready(function(){
 			case 0:
 			player.x += 1; break;
 			case 1:
-			player.x -=1; break;
+			player.x -= 1; break;
 			case 2:
 			player.y -= 1; break;
 			case 3:
@@ -105,7 +105,7 @@ $(document).ready(function(){
 		context.fillStyle = "red";
 		context.fillRect(candy.x * gridSize, candy.y * gridSize, gridSize, gridSize);
 
-		for(var i = 0; i < player.taill i++){
+		for(var i = 0; i < player.tail; i++){
 			if(i == 0){
 				context.fillStyle = "green";
 			}
@@ -122,5 +122,8 @@ $(document).ready(function(){
 
 	update();
 	var updates = setInterval(update, 100);
-});
+})
+
+
+
 
